@@ -4,16 +4,16 @@ Feature: Todo List Management
   # A user should be able to create a new task in the "Today's Tasks" list.
   Scenario: Create a new task in Today's Tasks list
     Given I open the TodoList application
-    When I add a new task "Playing Football" to the list "Today's Tasks"
-    Then the task "Playing Football" should be displayed in the list "Today's Tasks"
+    When I add a new task "Finishing the Skedda Technical Challenge" to the list "Today's Tasks"
+    Then the task "Finishing the Skedda Technical Challenge" should be displayed in the list "Today's Tasks"
 
   # A user should be able to remove/delete a task they created in "Today's Tasks".
   Scenario: Delete a newly created task from the To-Do list
     Given I open the TodoList application
-    When I add a new task "Doing workout at the gym" to the list "Today's Tasks"
-    Then the task "Doing workout at the gym" should be displayed in the list "Today's Tasks"
-    When I delete the task "Doing workout at the gym" from the list "Today's Tasks"
-    Then the task "Doing workout at the gym" should not be displayed in the list "Today's Tasks"
+    When I add a new task "Preparing for Interview Round 2 at Skedda" to the list "Today's Tasks"
+    Then the task "Preparing for Interview Round 2 at Skedda" should be displayed in the list "Today's Tasks"
+    When I delete the task "Preparing for Interview Round 2 at Skedda" from the list "Today's Tasks"
+    Then the task "Preparing for Interview Round 2 at Skedda" should not be displayed in the list "Today's Tasks"
 
   # A user should be able to mark a task as completed, moving it to the "Done" section.
   Scenario: Mark a task as done

@@ -114,10 +114,12 @@ namespace TodoListMeTests.Features
     testRunner.Given("I open the TodoList application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 7
-    testRunner.When("I add a new task \"Playing Football\" to the list \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I add a new task \"Finishing the Skedda Technical Challenge\" to the list \"Today\'s " +
+                        "Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-    testRunner.Then("the task \"Playing Football\" should be displayed in the list \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the task \"Finishing the Skedda Technical Challenge\" should be displayed in the li" +
+                        "st \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -145,18 +147,20 @@ namespace TodoListMeTests.Features
     testRunner.Given("I open the TodoList application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
-    testRunner.When("I add a new task \"Doing workout at the gym\" to the list \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I add a new task \"Preparing for Interview Round 2 at Skedda\" to the list \"Today\'s" +
+                        " Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
-    testRunner.Then("the task \"Doing workout at the gym\" should be displayed in the list \"Today\'s Task" +
-                        "s\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the task \"Preparing for Interview Round 2 at Skedda\" should be displayed in the l" +
+                        "ist \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 15
-    testRunner.When("I delete the task \"Doing workout at the gym\" from the list \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I delete the task \"Preparing for Interview Round 2 at Skedda\" from the list \"Toda" +
+                        "y\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
-    testRunner.Then("the task \"Doing workout at the gym\" should not be displayed in the list \"Today\'s " +
-                        "Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the task \"Preparing for Interview Round 2 at Skedda\" should not be displayed in t" +
+                        "he list \"Today\'s Tasks\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
