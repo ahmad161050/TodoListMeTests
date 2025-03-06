@@ -1,0 +1,70 @@
+***Reasoning for Selecting Top 2 Test Cases and Skipping Others***
+
++++-----Top 2 Selected Test Cases-----+++
+
+1. Create a new task in Today's Tasks list
+2. Delete a newly created task from the To-Do list
+
+Why These Two Tests?
+
+These two test cases are fundamental to the core functionality of the Todo List application. 
+They validate the most critical user actions—adding and removing tasks—which form the basis of task management. 
+Here’s why they were prioritized:
+
+1. Creating a New Task
+
+   - This ensures that a user can successfully add tasks to the list, a primary function of any to-do application.
+   - If this feature is broken, users cannot use the application effectively.
+   - It acts as a prerequisite for other tests, such as marking tasks as done, sorting, and deleting tasks.
+
+2. Deleting a Task
+
+   - Just as adding tasks is crucial, removing them is equally important for proper list management.
+   - This test validates that users can clean up their lists, keeping only relevant tasks.
+   - It also ensures that UI elements (such as the delete button) behave correctly.
+
+Together, these tests ensure that the fundamental purpose of the to-do application task management is functioning 
+correctly. If either of these fails, the usability of the entire application is compromised.
+
+---
+
+Why Other Tests Were Skipped?
+
+Several other test cases were available, but they were deprioritized based on the following criteria:
+
+1. Redundant Workarounds
+
+   - Many actions (like marking tasks as done, unmarking, and sorting) can be indirectly verified through 
+   variations of the core create/delete functionality.
+   - If adding and removing tasks work, these secondary operations are unlikely to be blockers.
+
+2. Less Business-Critical Features
+
+   - Features like sorting tasks, printing lists, and copying lists enhance user experience but are not as 
+   essential as creating and deleting tasks.
+   - Even if these features fail, the core task management still remains usable.
+
+3. Testing Dependencies
+
+   - Some test cases depend on other functionalities that are already covered by the top 2 tests.
+   - Example: Deleting a done task requires first marking it as done. But deleting a task (in any state) is 
+   already tested, making this a lower priority.
+
+4. Edge Cases & Rarely Used Features
+
+   - Opening a list in a new window or creating categories are edge cases that most users may not frequently use.
+   - While useful, their failure would not render the application unusable.
+
+---
+
+Conclusion:
+
+By selecting "creating and deleting tasks" as the top two tests, we ensure that the core functionality of the 
+application is covered. Other tests, while valuable, provide diminishing returns in automation priority since 
+their behavior can be inferred from successful execution of the top 2 tests.
+
+This prioritization allows for an efficient test execution strategy, focusing on critical functionalities first 
+while deferring less impactful scenarios.
+
+
+

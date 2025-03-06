@@ -1,0 +1,33 @@
+# Ignore build and output directories
+bin/
+obj/
+TestResults/
+
+# Ignore Visual Studio related files
+.vs/
+*.suo
+*.user
+*.cache
+*.csproj.user
+
+# Ignore Rider / JetBrains IDE files
+.idea/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore package files
+*.dll
+*.exe
+*.log
+*.nuget/
+*.nupkg
+
+# Ignore compiled files
+*.pdb
+*.class
+*.jar
+
+# Ignore environment-specific files
+.env
+*.config
